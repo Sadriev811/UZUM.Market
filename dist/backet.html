@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/download.uzum.png">
+    <title>Uzum Корзина</title>
+</head>
+<body>
+    <div class="load">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+    <section class="download">
+    <div class="container">
+        <div class="download_box">
+            <div class="download_box_in">
+                <div class="download_box_in_logo">
+                    <img src="./img/download.uzum.png" alt="">
+                </div>
+                <div class="download_box_in_text">
+                    <h2>Uzum Market</h2>
+                    <a href="https://apps.apple.com/us/app/uzum-market-marketplace-uz/id1640483056?mt=8">Скачать приложение</a>
+                </div>
+            </div>
+            <button class="download_box_btn">Скачать</button>
+        </div>
+    </div>
+</section>
+    <header class="header">
+    
+        <div class="header_in">
+               <div class="header_in_cont">
+                 <!-- right -->
+            <div class="header_in_right">
+                <div class="header_in_right_location">
+                    <img src="img/compass-icon.png" alt="compass-icon">
+                    <div class="header_in_right_location_text">
+                        <h3>Город: <span id="country_btn" class="header_in_right_location_text_span">Ташкент</span></h3>
+                        <p>Пункты выдачи</p>
+                    </div>
+                </div>
+            </div>
+            <!-- center -->
+            <div class="header_in_center">
+                <h4>Доставим ваш заказ бесплатно — всего за 1 день!</h4>
+            </div>
+            <!-- left -->
+            <div class="header_in_left">
+                <p class="header_in_left_answer">Вопрос-ответ</p>
+                <p class="header_in_left_order">Мои заказы</p>
+                <div class="header_in_left_language">
+                    <img src="img/Frame.svg" alt="russia" class="header_in_left_language_logo">
+                    <p class="header_in_left_language_name">Русский</p>
+                </div>
+            </div>
+               </div>
+        </div>
+<div class="container">
+        
+        <div class="header_under">
+            <div class="header_under_home">
+                <div id="burger" class="header_under_home_burger">
+                    <svg data-v-e86a82cc="" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#141415" class="ui-icon  nav-humb">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5.75C3 5.33579 3.33579 5 3.75 5H20.25C20.6642 5 21 5.33579 21 5.75C21 6.16421 20.6642 6.5 20.25 6.5H3.75C3.33579 6.5 3 6.16421 3 5.75ZM3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12ZM3.75 17.5C3.33579 17.5 3 17.8358 3 18.25C3 18.6642 3.33579 19 3.75 19H20.25C20.6642 19 21 18.6642 21 18.25C21 17.8358 20.6642 17.5 20.25 17.5H3.75Z"></path>
+                        </svg>
+                </div>
+                <div class="header_under_home_right">
+                    <a href="../index.html"><img src="img/uzumLogo.png" alt="UzumLogoType" class="my_logo"></a>
+                </div>
+            </div>
+            <div class="header_under_center">
+                <div class="header_under_center_btn">
+                    <img src="img/div.catalog-icon.png" alt="CatalogIcon">
+                    <span class="header_under_center_btn_span">Каталог</span>
+                </div>
+                <div class="header_under_center_input">
+                    <input type="text" placeholder="Искать товары и категории">
+                    <div class="header_under_center_input_search"><img src="img/search.logo.png" alt="searchLogoType"></div>
+                    
+                </div>
+            </div>
+            <div class="header_under_left">
+                <div class="header_under_left_block">
+                    <img src="img/account.logo.png" alt="account">
+                    <h4 class="enter">Войти</h4>
+                </div>
+                <a href="../liked.html" class="header_under_left_block">
+                    <img src="img/like.logo.png" alt="like">
+                    <h4>Избранное</h4>
+                </a>
+                <a href="../backet.html" class="header_under_left_block">
+                    <img src="img/korzina.logo.png" alt="korzina">
+                    <h4>Корзина</h4>
+            </a>
+            </div>
+        </div>
+        <div class="header_another">
+            <input type="text" placeholder="Искать товары и категории">
+        </div>
+
+
+        
+
+    </div>
+</header>
+
+<div class="country_modal">
+    <div class="country_modal_box">
+        <div class="country_modal_box_block">
+            <div class="country_modal_box_block_item">
+                <h2>Выберите город доставки</h2>
+                    <p>Бесплатная доставка на следующий день в 67 городов Узбекистана:</p>
+                    <div class="country_modal_box_block_item_search">
+                        <input type="text" id="country_modal_input" placeholder="Найти город">
+                    </div>
+                    <div class="country_modal_box_block_item_grid" id="country_modal">
+                        <div class="cross">
+                            &#215
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- into modal -->
+<div class="into_modal">
+    <div class="into_modal_box">
+        <div class="into_modal_box_title">
+            <h2>Введите свои данные</h2>
+            <p>Мы отправим вам код на электронную почту</p>
+        </div>
+        <div class="into_modal_box_name">
+            <label id="name">
+                <p>Введите имя:</p>
+                <input class="into_inputs name" type="text" placeholder="На пример: Алекс" id="name" required maxlength="8">
+            </label>
+        </div>
+        <div class="into_modal_box_password">
+            <label id="password">   
+                <p>Введите Пароль:</p>
+                <input class="into_inputs password" type="password" placeholder="Придумайте себе пароль" id="password" required minlength="8" maxlength="12">
+            </label>
+        </div>
+        <div class="into_modal_box_email">
+            <label id="email">
+                <p>Введите E-mail:</p>
+                <input class="into_inputs email" type="email" placeholder="TheAnton26@gmail.com" id="email" required>
+            </label>
+        </div>
+        <button class="into_modal_box_btn">Получить код</button>
+        <div class="into_cross">
+            &#215
+        </div>
+    </div>
+</div>
+    <!-- <section class="into_account">
+        <div class="container">
+            <div class="into_account_box">
+                <img src="https://uzum.uz/static/img/shopocat.490a4a1.png" alt="">
+                <h2>В корзине пока нет товаров</h2>
+                <p>Начните с подборок на главной странице или найдите нужный товар через поиск</p>
+                <button class="into_account"><a href="../index.html" style="text-decoration: none; color: white;">На главную</a></button>
+            </div>
+        </div>
+    </section> -->
+    <div class="container">
+        <h3 class="title_of_backet">Ваша корзина, <span class="how_many_title">2 товар</span></h3>
+        <div class="backet">
+            
+            <div class="backet_box">
+                <div class="backet_box_header">
+                    <div class="backet_box_header_left">
+                        <div class="check"></div>
+                        <h3>Выбрать все</h3>
+                    </div>
+                    <div class="backet_box_header_right">
+                        <p>Ближайшая дата доставки:</p>
+                        <div class="backet_box_header_right_date">
+                            30 октября (Завтра)
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="backet_box_block">
+                    <div class="backet_box_block_left">
+                        <div class="check"></div>
+                        <div class="backet_box_block_left_images"><img src="https://images.uzum.uz/chgcbibltlh4bk4ji6i0/t_product_240_high.jpg" alt=""></div>
+                        <div class="backet_box_block_left_text">
+                            <a href="">Сумка багет женская, на плечо</a>
+                            <div class="backet_box_block_left_text_und">
+                                <p>Продавец: <span>Okbags</span></p>
+                            <p>Цвет: <span>Белый</span></p>
+                            <p>Цвет: <span>Белый</span></p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backet_box_block_center">
+                        <button class="min">-</button>
+                        <input type="text" readonly value="1">
+                        <button class="plus">+</button>
+                    </div>
+                    <div class="backet_box_block_right">
+                        <div class="backet_box_block_right_delete">
+                            <svg data-v-a72a970e="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.75 3.5C9.33579 3.5 9 3.83579 9 4.25V5H15V4.25C15 3.83579 14.6642 3.5 14.25 3.5H9.75ZM7.5 4.25V5H3.75C3.33579 5 3 5.33579 3 5.75C3 6.16421 3.33579 6.5 3.75 6.5H4.30005L5.62088 19.9681C5.73386 21.1202 6.70255 21.9985 7.86014 21.9985H16.1399C17.2975 21.9985 18.2661 21.1202 18.3791 19.9681L19.7 6.5H20.25C20.6642 6.5 21 6.16421 21 5.75C21 5.33579 20.6642 5 20.25 5H16.5V4.25C16.5 3.00736 15.4926 2 14.25 2H9.75C8.50736 2 7.5 3.00736 7.5 4.25ZM11 9.75C11 9.33579 10.6642 9 10.25 9C9.83579 9 9.5 9.33579 9.5 9.75V17.25C9.5 17.6642 9.83579 18 10.25 18C10.6642 18 11 17.6642 11 17.25V9.75ZM14.5 9.75C14.5 9.33579 14.1642 9 13.75 9C13.3358 9 13 9.33579 13 9.75V17.25C13 17.6642 13.3358 18 13.75 18C14.1642 18 14.5 17.6642 14.5 17.25V9.75Z" fill="black"></path>
+                                </svg>
+                                <span>Удалить</span>
+                        </div>
+                        <h3 class="new_price">89 000 сум</h3>
+                        <p class="old_price">399 000</p>
+                    </div>
+                </div>
+                
+                <div class="backet_box_block">
+                    <div class="backet_box_block_left">
+                        <div class="check"></div>
+                        <div class="backet_box_block_left_images"><img src="https://images.uzum.uz/chgcbibltlh4bk4ji6i0/t_product_240_high.jpg" alt=""></div>
+                        <div class="backet_box_block_left_text">
+                            <a href="">Сумка багет женская, на плечо</a>
+                            <div class="backet_box_block_left_text_und">
+                                <p>Продавец: <span>Okbags</span></p>
+                            <p>Цвет: <span>Белый</span></p>
+                            <p>Цвет: <span>Белый</span></p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backet_box_block_center">
+                        <button class="min">-</button>
+                        <input type="text" readonly value="1">
+                        <button class="plus">+</button>
+                    </div>
+                    <div class="backet_box_block_right">
+                        <div class="backet_box_block_right_delete">
+                            <svg data-v-a72a970e="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.75 3.5C9.33579 3.5 9 3.83579 9 4.25V5H15V4.25C15 3.83579 14.6642 3.5 14.25 3.5H9.75ZM7.5 4.25V5H3.75C3.33579 5 3 5.33579 3 5.75C3 6.16421 3.33579 6.5 3.75 6.5H4.30005L5.62088 19.9681C5.73386 21.1202 6.70255 21.9985 7.86014 21.9985H16.1399C17.2975 21.9985 18.2661 21.1202 18.3791 19.9681L19.7 6.5H20.25C20.6642 6.5 21 6.16421 21 5.75C21 5.33579 20.6642 5 20.25 5H16.5V4.25C16.5 3.00736 15.4926 2 14.25 2H9.75C8.50736 2 7.5 3.00736 7.5 4.25ZM11 9.75C11 9.33579 10.6642 9 10.25 9C9.83579 9 9.5 9.33579 9.5 9.75V17.25C9.5 17.6642 9.83579 18 10.25 18C10.6642 18 11 17.6642 11 17.25V9.75ZM14.5 9.75C14.5 9.33579 14.1642 9 13.75 9C13.3358 9 13 9.33579 13 9.75V17.25C13 17.6642 13.3358 18 13.75 18C14.1642 18 14.5 17.6642 14.5 17.25V9.75Z" fill="black"></path>
+                                </svg>
+                                <span>Удалить</span>
+                        </div>
+                        <h3 class="new_price">89 000 сум</h3>
+                        <p class="old_price">399 000</p>
+                    </div>
+                </div>
+
+                <div class="backet_box_block">
+                    <div class="backet_box_block_left">
+                        <div class="check"></div>
+                        <div class="backet_box_block_left_images"><img src="https://images.uzum.uz/chgcbibltlh4bk4ji6i0/t_product_240_high.jpg" alt=""></div>
+                        <div class="backet_box_block_left_text">
+                            <a href="">Сумка багет женская, на плечо</a>
+                            <div class="backet_box_block_left_text_und">
+                                <p>Продавец: <span>Okbags</span></p>
+                            <p>Цвет: <span>Белый</span></p>
+                            <p>Цвет: <span>Белый</span></p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backet_box_block_center">
+                        <button class="min">-</button>
+                        <input type="text" readonly value="1">
+                        <button class="plus">+</button>
+                    </div>
+                    <div class="backet_box_block_right">
+                        <div class="backet_box_block_right_delete">
+                            <svg data-v-a72a970e="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.75 3.5C9.33579 3.5 9 3.83579 9 4.25V5H15V4.25C15 3.83579 14.6642 3.5 14.25 3.5H9.75ZM7.5 4.25V5H3.75C3.33579 5 3 5.33579 3 5.75C3 6.16421 3.33579 6.5 3.75 6.5H4.30005L5.62088 19.9681C5.73386 21.1202 6.70255 21.9985 7.86014 21.9985H16.1399C17.2975 21.9985 18.2661 21.1202 18.3791 19.9681L19.7 6.5H20.25C20.6642 6.5 21 6.16421 21 5.75C21 5.33579 20.6642 5 20.25 5H16.5V4.25C16.5 3.00736 15.4926 2 14.25 2H9.75C8.50736 2 7.5 3.00736 7.5 4.25ZM11 9.75C11 9.33579 10.6642 9 10.25 9C9.83579 9 9.5 9.33579 9.5 9.75V17.25C9.5 17.6642 9.83579 18 10.25 18C10.6642 18 11 17.6642 11 17.25V9.75ZM14.5 9.75C14.5 9.33579 14.1642 9 13.75 9C13.3358 9 13 9.33579 13 9.75V17.25C13 17.6642 13.3358 18 13.75 18C14.1642 18 14.5 17.6642 14.5 17.25V9.75Z" fill="black"></path>
+                                </svg>
+                                <span>Удалить</span>
+                        </div>
+                        <h3 class="new_price">89 000 сум</h3>
+                        <p class="old_price">399 000</p>
+                    </div>
+                </div>
+                
+                
+                
+
+
+            </div>
+
+
+
+            <div class="backet_price">
+                <div class="backet_price_top">
+                    <div class="backet_price_top_cicle">
+                        500
+                    </div>
+                    <div class="backet_price_top_text">
+                        <h4>Бесплатно доставим ваш заказ</h4>
+                        <div>в фирменный пункт выдачи</div>
+
+                        <p>Нужно закупиться на 500 тыс. сум чтобы получить бесплатную доставку до двери </p>
+                    </div>
+                </div>
+                <div class="backet_price_bottom">
+                    <h3>Ваш заказ</h3>
+
+                    <div class="backet_price_bottom_many">
+                        <h4>Товары (<span class="how_many">0</span>):</h4>
+                        <p>399 000 сум</p>
+                    </div>
+
+                    <div class="backet_price_bottom_date">
+                        Доставка 30 октября (Завтра)
+                    </div>
+
+                    <div class="backet_price_bottom_all">
+                        <h4>Итого:</h4>
+                        <h2>39 000 сум</h2>
+                    </div>
+
+                    <div class="backet_price_bottom_economed">
+                        Вы экономите: <span>310 000 сум</span>
+                    </div>
+
+                    <button class="backet_price_bottom_btn">Перейти к оформлению</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="burger_menu">
+    <div class="container">
+        <div class="burger_menu_box">
+            <div class="burger_menu_box_header">
+                <div class="burger_menu_box_header_cross">
+                    &#215
+                </div>
+                <div class="burger_menu_box_header_into">
+                    <span>Войти</span>
+                    /
+                    <span>Зарегистрироваться</span>
+                </div>
+            </div>
+
+            <div class="burger_menu_box_katalog">
+                <div class="burger_menu_box_katalog_left">
+                    <svg data-v-db6d9722="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 3C6.67157 3 6 3.67157 6 4.5H18C18 3.67157 17.3284 3 16.5 3H7.5ZM4.5 7.5C4.5 6.67157 5.17157 6 6 6H18C18.8284 6 19.5 6.67157 19.5 7.5H4.5ZM3 11.25C3 10.0074 4.00736 9 5.25 9H18.75C19.9926 9 21 10.0074 21 11.25V18.75C21 19.9926 19.9926 21 18.75 21H5.25C4.00736 21 3 19.9926 3 18.75V11.25ZM5.25 10.5C4.83579 10.5 4.5 10.8358 4.5 11.25V18.75C4.5 19.1642 4.83579 19.5 5.25 19.5H18.75C19.1642 19.5 19.5 19.1642 19.5 18.75V11.25C19.5 10.8358 19.1642 10.5 18.75 10.5H5.25Z" fill="#3131C4"></path>
+                        </svg>
+                    <h3>Каталог</h3>
+                </div>
+                <div class="burger_menu_box_katalog_rigth">
+                    <svg data-v-db6d9722="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon  toggle-icon">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.21967 9.21967C5.51256 8.92678 5.98744 8.92678 6.28033 9.21967L12 14.9393L17.7197 9.21967C18.0126 8.92678 18.4874 8.92678 18.7803 9.21967C19.0732 9.51256 19.0732 9.98744 18.7803 10.2803L12.5303 16.5303C12.2374 16.8232 11.7626 16.8232 11.4697 16.5303L5.21967 10.2803C4.92678 9.98744 4.92678 9.51256 5.21967 9.21967Z" fill="black"></path>
+                        </svg>
+                </div>
+            </div>
+
+            <div class="burger_menu_box_top">
+                <!-- backet -->
+                <div class="burger_menu_box_top_block">
+
+                    <div class="burger_menu_box_top_block_img">
+                        <svg data-v-db6d9722="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.5C10.2402 2.5 9 3.88779 9 5.5H15C15 3.88779 13.7598 2.5 12 2.5ZM7.5 9.5V7H5.5V12.25C5.5 12.6642 5.16421 13 4.75 13C4.33578 13 4 12.6642 4 12.25V6.25V5.5H4.75H7.5C7.5 3.11221 9.35984 1 12 1C14.6402 1 16.5 3.11221 16.5 5.5H19.25H20V6.25V19.75C20 20.9926 18.9926 22 17.75 22H13.25C12.8358 22 12.5 21.6642 12.5 21.25C12.5 20.8358 12.8358 20.5 13.25 20.5H17.75C18.1642 20.5 18.5 20.1642 18.5 19.75V7H16.5V9.5H15V7H9V9.5H7.5ZM12.2738 16.0323C12.5667 15.7395 12.5667 15.2646 12.2738 14.9717C11.9809 14.6788 11.506 14.6788 11.2131 14.9717L5.99548 20.1893L3.78034 17.9742C3.48744 17.6813 3.01257 17.6813 2.71968 17.9741C2.42678 18.267 2.42677 18.7419 2.71966 19.0348L5.46513 21.7803C5.60579 21.921 5.79655 22 5.99547 22C6.19438 22 6.38515 21.921 6.5258 21.7803L12.2738 16.0323Z" fill="#141415"></path>
+                            </svg>
+                    </div>
+                    <a href="../backet.html">Мои заказы</a>
+                </div>
+
+            
+            <!-- liked -->
+            <div class="burger_menu_box_top_block">
+                <div class="burger_menu_box_top_block_img">
+                    <svg data-v-db6d9722="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 5.5C5.26935 5.5 3.5 7.30906 3.5 9.5C3.5 10.4282 3.87684 11.4436 4.5487 12.5105C5.21692 13.5716 6.14148 14.6274 7.15127 15.6219C8.55769 17.007 10.0318 18.1879 11.1708 19.1003C11.4734 19.3427 11.7523 19.5661 12 19.7694C12.2477 19.5661 12.5266 19.3427 12.8292 19.1003C13.9682 18.1879 15.4423 17.007 16.8487 15.6219C17.8585 14.6274 18.7831 13.5716 19.4513 12.5105C20.1232 11.4436 20.5 10.4282 20.5 9.5C20.5 7.30898 18.7314 5.5 16.5 5.5C14.3473 5.5 13.0738 7.20226 12.7262 7.74742C12.3889 8.27655 11.6111 8.27653 11.2738 7.74742C10.9262 7.20225 9.65273 5.5 7.5 5.5ZM2 9.5C2 6.49094 4.43065 4 7.5 4C9.73143 4 11.2249 5.30207 12 6.21581C12.7751 5.30207 14.2686 4 16.5 4C19.5702 4 22 6.49102 22 9.5C22 10.8218 21.4706 12.1189 20.7206 13.3098C19.9669 14.5066 18.954 15.6539 17.9013 16.6906C16.4429 18.1269 14.808 19.4384 13.6502 20.3672C13.1649 20.7565 12.7634 21.0786 12.4939 21.3144C12.2111 21.5619 11.7889 21.5619 11.5061 21.3144C11.2366 21.0786 10.8351 20.7565 10.3498 20.3672C9.19201 19.4384 7.55712 18.1269 6.09873 16.6906C5.04602 15.6539 4.03308 14.5066 3.27942 13.3098C2.52941 12.1189 2 10.8218 2 9.5Z" fill="#141415"></path>
+                        </svg>
+                </div>
+                <a href="../liked.html">Избранное</a>
+            </div>
+
+            <!--  -->
+            <div class="burger_menu_box_top_block">
+                <div class="burger_menu_box_top_block_img">
+                    <svg data-v-db6d9722="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon  geo-icon">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 11C7 8.23858 9.23858 6 12 6C14.7614 6 17 8.23858 17 11C17 13.2317 15.8079 15.2429 14.5153 16.7262C13.8738 17.4623 13.2212 18.0525 12.7097 18.4561C12.4536 18.6582 12.2375 18.8098 12.0802 18.9082C12.0504 18.9268 12.0237 18.9429 12 18.9567C11.9763 18.9429 11.9496 18.9268 11.9198 18.9082C11.7625 18.8098 11.5464 18.6582 11.2903 18.4561C10.7788 18.0525 10.1262 17.4623 9.48471 16.7262C8.19208 15.2429 7 13.2317 7 11ZM12 5C8.68629 5 6 7.68629 6 11C6 13.5808 7.36827 15.8196 8.73081 17.3832C9.41691 18.1705 10.1156 18.803 10.6709 19.2411C10.9482 19.46 11.1944 19.634 11.3897 19.7561C11.4866 19.8167 11.5778 19.8688 11.6582 19.9076C11.6982 19.9269 11.7428 19.9465 11.7889 19.9623C11.8251 19.9747 11.9044 20 12 20C12.0956 20 12.1749 19.9747 12.2111 19.9623C12.2572 19.9465 12.3018 19.9269 12.3418 19.9076C12.4222 19.8688 12.5134 19.8167 12.6103 19.7561C12.8056 19.634 13.0518 19.46 13.3291 19.2411C13.8844 18.803 14.5831 18.1705 15.2692 17.3832C16.6317 15.8196 18 13.5808 18 11C18 7.68629 15.3137 5 12 5ZM11 11C11 10.4477 11.4477 10 12 10C12.5523 10 13 10.4477 13 11C13 11.5523 12.5523 12 12 12C11.4477 12 11 11.5523 11 11ZM12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9Z" fill="#141415"></path>
+                        </svg>
+                </div>
+                <a href="" class="burger_a">Город: <span id="country_btn2" class="header_in_right_location_text_span">Ташкент</span></a>
+            </div>
+
+            <!--  -->
+            <div class="burger_menu_box_top_block">
+                <div class="burger_menu_box_top_block_img">
+                    <svg data-v-db6d9722="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 18.6644V8.01852L8.25 6.14352V16.7964C8.20123 16.8162 8.15305 16.8379 8.10558 16.8616L4.5 18.6644ZM9.75 16.7964V6.14352L14.1056 8.3213C14.153 8.34504 14.2012 8.36678 14.25 8.38651V19.0394L9.89443 16.8616C9.84695 16.8379 9.79877 16.8162 9.75 16.7964ZM15.75 19.0394L19.5 17.1644V6.51852L15.8944 8.32131C15.847 8.34504 15.7988 8.36678 15.75 8.38651V19.0394ZM8.77639 18.2033C8.91716 18.1329 9.08284 18.1329 9.22361 18.2033L14.6646 20.9238C14.8757 21.0293 15.1243 21.0293 15.3354 20.9238L20.5854 18.2988C20.8395 18.1717 21 17.912 21 17.6279V5.30499C21 4.74746 20.4133 4.38483 19.9146 4.63417L15.2236 6.97966C15.0828 7.05005 14.9172 7.05005 14.7764 6.97966L9.33541 4.25917C9.12426 4.1536 8.87574 4.1536 8.66459 4.25917L3.41459 6.88417C3.1605 7.01122 3 7.27091 3 7.55499V19.8779C3 20.4355 3.58673 20.7981 4.08541 20.5488L8.77639 18.2033Z" fill="black"></path>
+                        </svg>
+                </div>
+                <a href="#">Пункты выдачи</a>
+            </div>
+
+            </div>
+
+            <div class="burger_menu_box_under">
+                <div class="burger_menu_box_under_block">
+                    <div class="burger_menu_box_under_block_img">
+                        <svg data-v-db6d9722="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.5C7.30558 3.5 3.5 7.30558 3.5 12C3.5 16.6944 7.30558 20.5 12 20.5C16.6944 20.5 20.5 16.6944 20.5 12C20.5 7.30558 16.6944 3.5 12 3.5ZM2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM13 16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16C11 15.4477 11.4477 15 12 15C12.5523 15 13 15.4477 13 16ZM10.4908 9.36697C10.6002 8.67414 11.1635 8 12 8C12.823 8 13.3815 8.65255 13.5035 9.33344C13.5246 9.75954 13.4341 10.0331 13.3139 10.238C13.1791 10.4678 12.9791 10.661 12.6984 10.8964C12.6531 10.9345 12.6037 10.9746 12.5515 11.017L12.5514 11.017C12.0385 11.4332 11.25 12.073 11.25 13.25C11.25 13.6642 11.5858 14 12 14C12.4142 14 12.75 13.6642 12.75 13.25C12.75 12.8099 12.9721 12.6239 13.5817 12.1133L13.6625 12.0456C13.9628 11.7937 14.3345 11.4627 14.6077 10.997C14.8922 10.5121 15.0443 9.92852 14.9985 9.20281L14.9963 9.16774L14.9908 9.13303C14.8002 7.92587 13.7728 6.5 12 6.5C10.2272 6.5 9.19978 7.92587 9.00918 9.13303C8.94458 9.54217 9.22388 9.92622 9.63303 9.99082C10.0422 10.0554 10.4262 9.77612 10.4908 9.36697Z" fill="black"></path>
+                          </svg>
+                    </div>
+                    <a href="#">Вопрос-ответ</a>
+                </div>
+
+                <!--  -->
+                <div class="burger_menu_box_under_block">
+                    <div class="burger_menu_box_under_block_img">
+                        <svg data-v-db6d9722="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.56066 7H18.4393L12.8839 12.5555C12.3957 13.0436 11.6043 13.0436 11.1161 12.5555L5.56066 7ZM4.5 15.9393V8.06066L8.43934 12L4.5 15.9393ZM5.56066 17H18.4393L14.5 13.0607L13.9445 13.6161C12.8706 14.6901 11.1294 14.6901 10.0555 13.6161L9.5 13.0607L5.56066 17ZM15.5607 12L19.5 15.9393V8.06066L15.5607 12ZM5 5.5C3.89543 5.5 3 6.39543 3 7.5V16.5C3 17.6046 3.89543 18.5 5 18.5H19C20.1046 18.5 21 17.6046 21 16.5V7.5C21 6.39543 20.1046 5.5 19 5.5H5Z" fill="black"></path>
+                            </svg>
+                    </div>
+                    <a href="#"> Связаться с нами </a>
+                </div>
+
+                <!--  -->
+                <div class="burger_menu_box_under_block">
+                    <div class="burger_menu_box_under_block_img">
+                        <svg data-v-db6d9722="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 2C7.00736 2 6 3.00736 6 4.25V11.0189C6.16502 11.0064 6.33176 11 6.5 11C6.84007 11 7.17403 11.0261 7.5 11.0764V4.25C7.5 3.83579 7.83579 3.5 8.25 3.5H15.75C16.1642 3.5 16.5 3.83579 16.5 4.25V19.75C16.5 20.1642 16.1642 20.5 15.75 20.5H12.2678C11.9806 21.051 11.6168 21.5557 11.1904 22H15.75C16.9926 22 18 20.9926 18 19.75V4.25C18 3.00736 16.9926 2 15.75 2H8.25ZM13 17.5C13 18.0163 12.9398 18.5185 12.8261 19H14.5C14.9142 19 15.25 18.6642 15.25 18.25C15.25 17.8358 14.9142 17.5 14.5 17.5H13ZM12 17.5C12 20.5376 9.53757 23 6.5 23C3.46243 23 1 20.5376 1 17.5C1 14.4624 3.46243 12 6.5 12C9.53757 12 12 14.4624 12 17.5ZM7 14.5C7 14.2239 6.77614 14 6.5 14C6.22386 14 6 14.2239 6 14.5V19.2929L4.35355 17.6464C4.15829 17.4512 3.84171 17.4512 3.64645 17.6464C3.45118 17.8417 3.45118 18.1583 3.64645 18.3536L6.14645 20.8536C6.34171 21.0488 6.65829 21.0488 6.85355 20.8536L9.35355 18.3536C9.54882 18.1583 9.54882 17.8417 9.35355 17.6464C9.15829 17.4512 8.84171 17.4512 8.64645 17.6464L7 19.2929V14.5Z" fill="#141415"></path>
+                          </svg>
+                    </div>
+                    <a href="#"> Приложение Uzum </a>
+                </div>
+
+                <!--  -->
+                <div class="burger_menu_box_under_block">
+                    <div class="burger_menu_box_under_block_img">
+                        <svg data-v-87d49bf0="" width="24" height="24" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                            <mask id="mask0_9302_3025" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="21">
+                            <path d="M10 20.5C15.5228 20.5 20 16.0228 20 10.5C20 4.97715 15.5228 0.5 10 0.5C4.47715 0.5 0 4.97715 0 10.5C0 16.0228 4.47715 20.5 10 20.5Z" fill="#F4F5F5"></path>
+                            </mask>
+                            <g mask="url(#mask0_9302_3025)">
+                            <rect y="0.5" width="20" height="20" fill="white"></rect>
+                            <rect y="13.5" width="20" height="7" fill="#E63838"></rect>
+                            <rect y="7" width="20" height="7" fill="#3131C4"></rect>
+                            </g>
+                            </svg>
+                    </div>
+                    <a href="#"> Язык сайта: Русский </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="footer">
+    <div class="container">
+
+        <!-- top -->
+        <div class="footer_top">
+            <div class="footer_top_block">
+                <div class="accordion">
+                    <h4>О нас</h4>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-lineclap="round"></path>
+                </svg>
+                </div>
+                <div class="content">
+                <a href="">Пункты выдачи</a>
+                <a href="">Вакансии</a> 
+                </div>                   
+            </div>
+            <div class="footer_top_block">
+                <div class="accordion">
+                    <h4>Пользователям</h4>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-lineclap="round"></path>
+                </svg>
+                </div>
+                <div class="content">
+                <a href="">Связаться с нами</a>
+                <a href="">Вопрос - Ответ</a>
+                </div>
+            </div>
+            <div class="footer_top_block">
+                <div class="accordion">
+                    <h4>Для предпринимателей</h4>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-lineclap="round"></path>
+                </svg>
+                </div>
+                <div class="content">
+                <a href="https://seller.uzum.uz/" target="_blank">Продавайте на Uzum</a>
+                <a href="https://seller.uzum.uz/seller/signin" target="_blank">Вход для продавцов</a>
+                </div>
+            </div>
+            <div class="footer_top_app">
+                <div class="footer_top_app_first">
+                    <div class="accordion">
+                        <h4>Скачать приложение</h4>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-lineclap="round"></path>
+                    </svg>
+                    </div>
+                    <div class="content">
+                        <div class="footer_top_app_first_store">
+                            <a href="https://apps.apple.com/ru/app/uzum-market-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD/id1640483056" target="_blank">
+                                <div class="footer_top_app_first_store_block">
+                                    <img src="img/footer_icon/appleStore.svg" alt="appleStore">
+                                        <p class="footer_top_app_first_store_block_p">AppStore</p>
+                                </div>
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=uz.uzum.app" target="_blank">
+                                <div class="footer_top_app_first_store_block">
+                                        <img src="img/footer_icon/playMarket.svg" alt="playMarket">
+                                    <p>Google Play</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_top_app_second">
+                    <div class="accordion">
+                        <h4>Uzum в соцсетях</h4>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-lineclap="round"></path>
+                    </svg>
+                    </div>
+                    <div class="content">
+                        <div class="footer_top_app_second_social">
+                            <a href="https://www.instagram.com/uzum.market/" target="_blank"><img src="img/footer_icon/instagramm.svg" alt="instagramm"></a>
+                            <a href="https://t.me/uzum_market" target="_blank"><img src="img/footer_icon/telegramm.svg" alt="telegramm"></a>
+                            <a href="https://www.youtube.com/channel/UCY3nNF2MUDKHrELA6LzbnHA" target="_blank"><img src="img/footer_icon/youTube.svg" alt="youTube"></a>
+                            <a href="https://www.facebook.com/uzummarket" target="_blank"><img src="img/footer_icon/facebook.svg" alt="facebook"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- bottom -->
+        <div class="footer_bottom">
+            <hr>
+            <div class="footer_bottom_box">
+                <div class="footer_bottom_box_block">
+                    <p>Соглашение о конфиденциальности</p>
+                    <p>Пользовательское соглашение</p>
+                </div>
+                <h3>«2023© ИП ООО «UZUM MARKET». ИНН 309376127. Все права защищены»</h3>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/backet.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<header class="header">
+    
+        <div class="header_in">
+               <div class="header_in_cont">
+                 <!-- right -->
+            <div class="header_in_right">
+                <div class="header_in_right_location">
+                    <img src="img/compass-icon.png" alt="compass-icon">
+                    <div class="header_in_right_location_text">
+                        <h3>Город: <span id="country_btn" class="header_in_right_location_text_span">Ташкент</span></h3>
+                        <p>Пункты выдачи</p>
+                    </div>
+                </div>
+            </div>
+            <!-- center -->
+            <div class="header_in_center">
+                <h4>Доставим ваш заказ бесплатно — всего за 1 день!</h4>
+            </div>
+            <!-- left -->
+            <div class="header_in_left">
+                <p class="header_in_left_answer">Вопрос-ответ</p>
+                <p class="header_in_left_order">Мои заказы</p>
+                <div class="header_in_left_language">
+                    <img src="img/Frame.svg" alt="russia" class="header_in_left_language_logo">
+                    <p class="header_in_left_language_name">Русский</p>
+                </div>
+            </div>
+               </div>
+        </div>
+<div class="container">
+        
+        <div class="header_under">
+            <div class="header_under_home">
+                <div id="burger" class="header_under_home_burger">
+                    <svg data-v-e86a82cc="" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#141415" class="ui-icon  nav-humb">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5.75C3 5.33579 3.33579 5 3.75 5H20.25C20.6642 5 21 5.33579 21 5.75C21 6.16421 20.6642 6.5 20.25 6.5H3.75C3.33579 6.5 3 6.16421 3 5.75ZM3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12ZM3.75 17.5C3.33579 17.5 3 17.8358 3 18.25C3 18.6642 3.33579 19 3.75 19H20.25C20.6642 19 21 18.6642 21 18.25C21 17.8358 20.6642 17.5 20.25 17.5H3.75Z"></path>
+                        </svg>
+                </div>
+                <div class="header_under_home_right">
+                    <a href="../index.html"><img src="img/uzumLogo.png" alt="UzumLogoType" class="my_logo"></a>
+                </div>
+            </div>
+            <div class="header_under_center">
+                <div class="header_under_center_btn">
+                    <img src="img/div.catalog-icon.png" alt="CatalogIcon">
+                    <span class="header_under_center_btn_span">Каталог</span>
+                </div>
+                <div class="header_under_center_input">
+                    <input type="text" placeholder="Искать товары и категории">
+                    <div class="header_under_center_input_search"><img src="img/search.logo.png" alt="searchLogoType"></div>
+                    
+                </div>
+            </div>
+            <div class="header_under_left">
+                <div class="header_under_left_block">
+                    <img src="img/account.logo.png" alt="account">
+                    <h4 class="enter">Войти</h4>
+                </div>
+                <a href="../liked.html" class="header_under_left_block">
+                    <img src="img/like.logo.png" alt="like">
+                    <h4>Избранное</h4>
+                </a>
+                <a href="../backet.html" class="header_under_left_block">
+                    <img src="img/korzina.logo.png" alt="korzina">
+                    <h4>Корзина</h4>
+            </a>
+            </div>
+        </div>
+        <div class="header_another">
+            <input type="text" placeholder="Искать товары и категории">
+        </div>
+
+
+        
+
+    </div>
+</header>
+
+<div class="country_modal">
+    <div class="country_modal_box">
+        <div class="country_modal_box_block">
+            <div class="country_modal_box_block_item">
+                <h2>Выберите город доставки</h2>
+                    <p>Бесплатная доставка на следующий день в 67 городов Узбекистана:</p>
+                    <div class="country_modal_box_block_item_search">
+                        <input type="text" id="country_modal_input" placeholder="Найти город">
+                    </div>
+                    <div class="country_modal_box_block_item_grid" id="country_modal">
+                        <div class="cross">
+                            &#215
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- into modal -->
+<div class="into_modal">
+    <div class="into_modal_box">
+        <div class="into_modal_box_title">
+            <h2>Введите свои данные</h2>
+            <p>Мы отправим вам код на электронную почту</p>
+        </div>
+        <div class="into_modal_box_name">
+            <label id="name">
+                <p>Введите имя:</p>
+                <input class="into_inputs name" type="text" placeholder="На пример: Алекс" id="name" required maxlength="8">
+            </label>
+        </div>
+        <div class="into_modal_box_password">
+            <label id="password">   
+                <p>Введите Пароль:</p>
+                <input class="into_inputs password" type="password" placeholder="Придумайте себе пароль" id="password" required minlength="8" maxlength="12">
+            </label>
+        </div>
+        <div class="into_modal_box_email">
+            <label id="email">
+                <p>Введите E-mail:</p>
+                <input class="into_inputs email" type="email" placeholder="TheAnton26@gmail.com" id="email" required>
+            </label>
+        </div>
+        <button class="into_modal_box_btn">Получить код</button>
+        <div class="into_cross">
+            &#215
+        </div>
+    </div>
+</div>

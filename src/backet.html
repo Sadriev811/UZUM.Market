@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/download.uzum.png">
+    <title>Uzum Корзина</title>
+</head>
+<body>
+    @@include('blocks/loader.html')
+    @@include('blocks/download.html')
+    @@include('blocks/header.html')
+    <!-- <section class="into_account">
+        <div class="container">
+            <div class="into_account_box">
+                <img src="https://uzum.uz/static/img/shopocat.490a4a1.png" alt="">
+                <h2>В корзине пока нет товаров</h2>
+                <p>Начните с подборок на главной странице или найдите нужный товар через поиск</p>
+                <button class="into_account"><a href="../index.html" style="text-decoration: none; color: white;">На главную</a></button>
+            </div>
+        </div>
+    </section> -->
+    <div class="container">
+        <h3 class="title_of_backet">Ваша корзина, <span class="how_many_title">2 товар</span></h3>
+        <div class="backet">
+            
+            <div class="backet_box">
+                <div class="backet_box_header">
+                    <div class="backet_box_header_left">
+                        <div class="check"></div>
+                        <h3>Выбрать все</h3>
+                    </div>
+                    <div class="backet_box_header_right">
+                        <p>Ближайшая дата доставки:</p>
+                        <div class="backet_box_header_right_date">
+                            30 октября (Завтра)
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="backet_box_block">
+                    <div class="backet_box_block_left">
+                        <div class="check"></div>
+                        <div class="backet_box_block_left_images"><img src="https://images.uzum.uz/chgcbibltlh4bk4ji6i0/t_product_240_high.jpg" alt=""></div>
+                        <div class="backet_box_block_left_text">
+                            <a href="">Сумка багет женская, на плечо</a>
+                            <div class="backet_box_block_left_text_und">
+                                <p>Продавец: <span>Okbags</span></p>
+                            <p>Цвет: <span>Белый</span></p>
+                            <p>Цвет: <span>Белый</span></p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backet_box_block_center">
+                        <button class="min">-</button>
+                        <input type="text" readonly value="1">
+                        <button class="plus">+</button>
+                    </div>
+                    <div class="backet_box_block_right">
+                        <div class="backet_box_block_right_delete">
+                            <svg data-v-a72a970e="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.75 3.5C9.33579 3.5 9 3.83579 9 4.25V5H15V4.25C15 3.83579 14.6642 3.5 14.25 3.5H9.75ZM7.5 4.25V5H3.75C3.33579 5 3 5.33579 3 5.75C3 6.16421 3.33579 6.5 3.75 6.5H4.30005L5.62088 19.9681C5.73386 21.1202 6.70255 21.9985 7.86014 21.9985H16.1399C17.2975 21.9985 18.2661 21.1202 18.3791 19.9681L19.7 6.5H20.25C20.6642 6.5 21 6.16421 21 5.75C21 5.33579 20.6642 5 20.25 5H16.5V4.25C16.5 3.00736 15.4926 2 14.25 2H9.75C8.50736 2 7.5 3.00736 7.5 4.25ZM11 9.75C11 9.33579 10.6642 9 10.25 9C9.83579 9 9.5 9.33579 9.5 9.75V17.25C9.5 17.6642 9.83579 18 10.25 18C10.6642 18 11 17.6642 11 17.25V9.75ZM14.5 9.75C14.5 9.33579 14.1642 9 13.75 9C13.3358 9 13 9.33579 13 9.75V17.25C13 17.6642 13.3358 18 13.75 18C14.1642 18 14.5 17.6642 14.5 17.25V9.75Z" fill="black"></path>
+                                </svg>
+                                <span>Удалить</span>
+                        </div>
+                        <h3 class="new_price">89 000 сум</h3>
+                        <p class="old_price">399 000</p>
+                    </div>
+                </div>
+                
+                <div class="backet_box_block">
+                    <div class="backet_box_block_left">
+                        <div class="check"></div>
+                        <div class="backet_box_block_left_images"><img src="https://images.uzum.uz/chgcbibltlh4bk4ji6i0/t_product_240_high.jpg" alt=""></div>
+                        <div class="backet_box_block_left_text">
+                            <a href="">Сумка багет женская, на плечо</a>
+                            <div class="backet_box_block_left_text_und">
+                                <p>Продавец: <span>Okbags</span></p>
+                            <p>Цвет: <span>Белый</span></p>
+                            <p>Цвет: <span>Белый</span></p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backet_box_block_center">
+                        <button class="min">-</button>
+                        <input type="text" readonly value="1">
+                        <button class="plus">+</button>
+                    </div>
+                    <div class="backet_box_block_right">
+                        <div class="backet_box_block_right_delete">
+                            <svg data-v-a72a970e="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.75 3.5C9.33579 3.5 9 3.83579 9 4.25V5H15V4.25C15 3.83579 14.6642 3.5 14.25 3.5H9.75ZM7.5 4.25V5H3.75C3.33579 5 3 5.33579 3 5.75C3 6.16421 3.33579 6.5 3.75 6.5H4.30005L5.62088 19.9681C5.73386 21.1202 6.70255 21.9985 7.86014 21.9985H16.1399C17.2975 21.9985 18.2661 21.1202 18.3791 19.9681L19.7 6.5H20.25C20.6642 6.5 21 6.16421 21 5.75C21 5.33579 20.6642 5 20.25 5H16.5V4.25C16.5 3.00736 15.4926 2 14.25 2H9.75C8.50736 2 7.5 3.00736 7.5 4.25ZM11 9.75C11 9.33579 10.6642 9 10.25 9C9.83579 9 9.5 9.33579 9.5 9.75V17.25C9.5 17.6642 9.83579 18 10.25 18C10.6642 18 11 17.6642 11 17.25V9.75ZM14.5 9.75C14.5 9.33579 14.1642 9 13.75 9C13.3358 9 13 9.33579 13 9.75V17.25C13 17.6642 13.3358 18 13.75 18C14.1642 18 14.5 17.6642 14.5 17.25V9.75Z" fill="black"></path>
+                                </svg>
+                                <span>Удалить</span>
+                        </div>
+                        <h3 class="new_price">89 000 сум</h3>
+                        <p class="old_price">399 000</p>
+                    </div>
+                </div>
+
+                <div class="backet_box_block">
+                    <div class="backet_box_block_left">
+                        <div class="check"></div>
+                        <div class="backet_box_block_left_images"><img src="https://images.uzum.uz/chgcbibltlh4bk4ji6i0/t_product_240_high.jpg" alt=""></div>
+                        <div class="backet_box_block_left_text">
+                            <a href="">Сумка багет женская, на плечо</a>
+                            <div class="backet_box_block_left_text_und">
+                                <p>Продавец: <span>Okbags</span></p>
+                            <p>Цвет: <span>Белый</span></p>
+                            <p>Цвет: <span>Белый</span></p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backet_box_block_center">
+                        <button class="min">-</button>
+                        <input type="text" readonly value="1">
+                        <button class="plus">+</button>
+                    </div>
+                    <div class="backet_box_block_right">
+                        <div class="backet_box_block_right_delete">
+                            <svg data-v-a72a970e="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.75 3.5C9.33579 3.5 9 3.83579 9 4.25V5H15V4.25C15 3.83579 14.6642 3.5 14.25 3.5H9.75ZM7.5 4.25V5H3.75C3.33579 5 3 5.33579 3 5.75C3 6.16421 3.33579 6.5 3.75 6.5H4.30005L5.62088 19.9681C5.73386 21.1202 6.70255 21.9985 7.86014 21.9985H16.1399C17.2975 21.9985 18.2661 21.1202 18.3791 19.9681L19.7 6.5H20.25C20.6642 6.5 21 6.16421 21 5.75C21 5.33579 20.6642 5 20.25 5H16.5V4.25C16.5 3.00736 15.4926 2 14.25 2H9.75C8.50736 2 7.5 3.00736 7.5 4.25ZM11 9.75C11 9.33579 10.6642 9 10.25 9C9.83579 9 9.5 9.33579 9.5 9.75V17.25C9.5 17.6642 9.83579 18 10.25 18C10.6642 18 11 17.6642 11 17.25V9.75ZM14.5 9.75C14.5 9.33579 14.1642 9 13.75 9C13.3358 9 13 9.33579 13 9.75V17.25C13 17.6642 13.3358 18 13.75 18C14.1642 18 14.5 17.6642 14.5 17.25V9.75Z" fill="black"></path>
+                                </svg>
+                                <span>Удалить</span>
+                        </div>
+                        <h3 class="new_price">89 000 сум</h3>
+                        <p class="old_price">399 000</p>
+                    </div>
+                </div>
+                
+                
+                
+
+
+            </div>
+
+
+
+            <div class="backet_price">
+                <div class="backet_price_top">
+                    <div class="backet_price_top_cicle">
+                        500
+                    </div>
+                    <div class="backet_price_top_text">
+                        <h4>Бесплатно доставим ваш заказ</h4>
+                        <div>в фирменный пункт выдачи</div>
+
+                        <p>Нужно закупиться на 500 тыс. сум чтобы получить бесплатную доставку до двери </p>
+                    </div>
+                </div>
+                <div class="backet_price_bottom">
+                    <h3>Ваш заказ</h3>
+
+                    <div class="backet_price_bottom_many">
+                        <h4>Товары (<span class="how_many">0</span>):</h4>
+                        <p>399 000 сум</p>
+                    </div>
+
+                    <div class="backet_price_bottom_date">
+                        Доставка 30 октября (Завтра)
+                    </div>
+
+                    <div class="backet_price_bottom_all">
+                        <h4>Итого:</h4>
+                        <h2>39 000 сум</h2>
+                    </div>
+
+                    <div class="backet_price_bottom_economed">
+                        Вы экономите: <span>310 000 сум</span>
+                    </div>
+
+                    <button class="backet_price_bottom_btn">Перейти к оформлению</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include('blocks/burger.html')
+    @@include('blocks/footer.html')
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/backet.js"></script>
+</body>
+</html>

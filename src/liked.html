@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/download.uzum.png">
+    <title>Uzum Market — интернет-магазин</title>
+</head>
+<body>
+
+    @@include('blocks/loader.html')
+    @@include('blocks/download.html')
+    @@include('blocks/header.html')
+    <section class="into_account">
+        <div class="container">
+            <div class="into_account_box">
+                <img src="https://uzum.uz/static/img/hearts.cf414be.png" alt="">
+                <h2>Добавьте то, что понравилось</h2>
+                <p>Нажмите на ♡ в товаре. Войдите в аккаунт и всё избранное сохранится</p>
+                <button class="into_account">Войти в аккаунт</button>
+            </div>
+        </div>
+    </section>
+    <main class="main">
+        <div class="container">
+
+            <div class="main_first_box">
+                
+            </div>
+        </div>
+    </main>
+    @@include('blocks/burger.html')
+    @@include('blocks/footer.html')
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/liked.js"></script>
+</body>
+</html>

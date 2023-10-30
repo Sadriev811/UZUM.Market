@@ -1,0 +1,160 @@
+.footer {
+    margin-top: 80px;
+    &_top {
+        @include flex (flex, space-between, flex-start);
+        margin-bottom: 50px;
+        &_block {
+            & h4 {
+                @include text ('Roboto' sans-serif, 14px, 500, 18px, 0);
+                color: #1F1F26;
+            }
+            & a {
+                @include text ('Roboto' sans-serif, 12px, 400, 16px, 0);
+                color: #4D4E59;
+                margin: 16px 0;
+                cursor: pointer;
+                text-decoration: none;
+                display: block;
+            }
+        }
+        &_app {
+            & a {
+                text-decoration: none;
+            }
+            & h4 {
+                @include text ('Roboto' sans-serif, 14px, 500, 18px, 0);
+                color: #1F1F26;
+            }
+            &_first {
+                &_store {
+                    @include flex (flex, space-between, center);
+                    margin: 16px 0;
+                    &_block {
+                        @include flex (flex, space-between, center);
+                        & img {
+                            margin-right: 5px;
+                            cursor: pointer;
+                        }
+                        & p {
+                            @include text ('Inter' sans-serif, 12.8px, 500, 15px, 0);
+                            color: #1F1F26;
+                            cursor: pointer;
+                        }
+                        &_p {
+                            margin-right: 25px ;
+                        }
+                    }
+                }
+            }
+            &_second {
+                margin-top: 32px;
+                &_social {
+                    margin-top: 16px;
+                    user-select: none;
+                    & img {
+                        padding-right: 12px;
+                    }
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    // bottom
+
+    &_bottom {
+        &_box {
+            @include flex (flex, space-between, center);
+            margin: 16px 0;
+            &_block {
+                display: flex;
+                & p {
+                    @include text ('Roboto' sans-serif, 14px, 500, 18px, 0);
+                    color: #1F1F26;
+                    margin-right: 15px;
+                    cursor: pointer;
+                }
+            }
+            & h3 {
+                @include text ('Roboto' sans-serif, 11px, 400, 14px, 0);
+                color: #4D4E59;
+            }
+        }
+    }
+}
+
+.accordion {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    & h4 {
+        margin-right: 7px;
+    }
+    & svg {
+        display: none;
+    }
+}
+@media(max-width:992px) {
+    .footer {
+        margin-top: 30px;
+    }
+    .footer_top {
+        display: block;
+        text-align: center;
+        & a {
+            font-size: 16px;
+        }
+        & h4 {
+            font-size: 18px;
+        }
+    }
+
+    .footer_top_app_first_store_block {
+        display: block;
+    }
+    .footer_top_app_first_store {
+        display: flex;
+        justify-content: center;
+    }
+    .accordion {
+        display: block;
+        & svg {
+            display: inline;
+        }
+        margin-top: 17px;
+    }
+    .content {
+        border-bottom: 1px solid hsla(220,4%,48%,0.2);
+        padding-bottom: 1rem;
+        max-height: 0px;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        animation: fade 2s ease-in-out;
+    }
+    @keyframes fade {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    .footer_bottom {
+        text-align: center;
+    & hr {
+        display: none;
+    }
+    &_box {
+        display: block;
+    &_block {
+        display: block;
+        & p {
+            margin-bottom: 10px;
+        }
+    }
+    }
+
+    }
+}

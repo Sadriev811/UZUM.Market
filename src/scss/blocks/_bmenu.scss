@@ -1,0 +1,112 @@
+.burger_menu {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    z-index: 5;
+    left: 100%;
+    right: 0;
+    transition: all 500ms ease;
+    &_box {
+        &_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 10px 0;
+            &_cross {
+                font-size: 36px;
+                cursor: pointer;
+                user-select: none;
+            }
+            &_into {
+                user-select: none;
+                & span {
+                    font-family: 'Inter', sans-serif;
+                    font-size: .875rem;
+                    font-weight: 500;
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        // каталог
+        &_katalog {
+            border-bottom: 5px solid rgb(232, 232, 243);
+            border-top: 5px solid rgb(232, 232, 243);
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            user-select: none;
+            padding: 10px 0;
+            &_left {
+                display: flex;
+                align-items: center;
+                & h3 {
+                    color: #141415;
+                    cursor: pointer;
+                    font-family: 'Inter', sans-serif;
+                    font-size: .875rem;
+                    font-weight: 500;
+                    line-height: 1.2em;
+                    padding-left: 5px;
+                    color: #3333CC;
+                }
+            }
+        }
+
+        &_top {
+            cursor: pointer;
+            &_block {
+                padding: 10px 0;
+                display: flex;
+                align-items: center;
+                & a {
+                    padding-left: 5px;
+                    color: #141415;
+                    cursor: pointer;
+                    font-family: 'Inter', sans-serif;
+                    font-size: .875rem;
+                    font-weight: 500;
+                    line-height: 1.2em;
+                    padding-left: 5px;
+                    color: black;
+                }
+                &_img {
+                    display: flex;
+                }
+            }
+        }
+
+        &_under {
+            border-top: 5px solid rgb(232, 232, 243);
+            cursor: pointer;
+            margin-top: 20px;
+            &_block {
+                padding: 10px 0;
+                display: flex;
+                align-items: center;
+                & a {
+                    padding-left: 5px;
+                    color: #141415;
+                    cursor: pointer;
+                    font-family: 'Inter', sans-serif;
+                    font-size: .875rem;
+                    font-weight: 500;
+                    line-height: 1.2em;
+                    padding-left: 5px;
+                    color: black;
+                }
+                &_img {
+                    display: flex;
+                }
+            }
+        }
+
+    }
+}
+.burger_active {
+   left: 0%;
+}

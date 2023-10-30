@@ -1,0 +1,100 @@
+body {
+     overflow: hidden;
+}
+.into_modal {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background: rgba(14,14,15,0.23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(700px) scale(0);
+    transition: all 500ms ease;
+    opacity: 0;
+    &_box {
+        position: relative;
+        text-align: center;
+        height: 490px;
+        width: 400px;
+        background-color: white;
+        margin: 32px;
+        padding: 32px;
+        overflow: hidden;
+        border-radius: 8px;
+        &_title {
+            margin-top: 10px;
+            & h2 {
+                color: #7000ff;
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: -.01em;
+                line-height: 30px;
+                font-family: 'Roboto', sans-serif;
+            }
+            & p {
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                line-height: 20px;
+                margin-top: 12px;
+            }
+        }
+        &_name {
+            margin-top: 20px;
+        }
+        &_name p, &_password p, &_email p {
+            font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 5px;
+        }
+        &_name input, &_password input, &_email input {
+            height: 40px;
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            outline: none;
+            padding: 10px;
+        }
+        &_btn {
+            height: 50px;
+            width: 100%;
+            margin-top: 25px;
+            border: none;
+            border-radius: 8px;
+            background-color: #7000ff;
+            color: white;
+            cursor: pointer;
+            transform: scale(1);
+            transition: 300ms;
+            &:hover {
+                transform: scale(1.040);
+            }
+            &:active {
+                background-color: #1f0345;
+            }
+        }
+    }
+}
+.into_cross {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(106, 106, 106);
+}
+.into_active {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+.input_red {
+    box-shadow: 0 0 0 2px red;
+}
+.input_green {
+    box-shadow: 0 0 0 2px rgb(8, 216, 8);
+}

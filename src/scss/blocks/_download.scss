@@ -1,0 +1,59 @@
+.download {
+    margin: 10px 0;
+    display: none;
+    &_box {
+        @include flex (flex, space-between, center);
+        &_in {
+            @include flex (flex, space-between, center);
+            &_logo img {
+                margin: 0 13px 0 0;
+            }
+            &_text {
+                & h2 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: -.011em;
+                    line-height: 18px;
+                }
+                & p {
+                    color: #848489;
+                    font-size: 11px;
+                    font-weight: 400;
+                    letter-spacing: .006em;
+                    line-height: 16px;
+                }
+            }
+        }
+        &_btn {
+            @include text ('Inter' sans-serif, 14px, 500, 18px, .006em);
+            border-radius: 10px;
+            column-gap: 6px;
+            height: 36px;
+            padding: 0 12px;
+            text-align: center;
+            background: $bg-color;
+            color: $color-white;
+            border: none;
+            opacity: 0.8;   
+            transition: 200ms;
+            cursor: pointer;
+            &:hover {
+                opacity: 1;
+            }
+            &:active {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+@media (max-width:1280px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+}
+@media (max-width:992px) {
+    .download {
+        display: block;
+    }
+}

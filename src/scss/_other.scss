@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+$bg-color: #7000ff;
+$color-white: #fff;
+
+// ====
+@mixin text ($f, $fs, $fw, $lh, $let) {
+    font-family: $f;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $let;
+}
+// для flex
+@mixin flex ($dis, $jus, $ai) {
+    display: $dis;
+    justify-content: $jus;
+    align-items: $ai;
+}
+
+// для grid сетки
+@mixin grid ($g, $gtc, $gap) {
+    display: $g;
+    grid-template-columns: $gtc;
+    gap: $gap;
+}
